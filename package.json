@@ -1,0 +1,36 @@
+{
+  "name": "candy-maker-api",
+  "version": "1.0.0",
+  "description": "In the initial commit of this project you were provided with the SQL to create a database of candies with their manufacturers. Working in a branch called `part-one-answer`, your task is to implement an Express driven REST API that allows a user to retrieve this data. Your API should support the routes listed below, pulling the data from the database via Sequelize models.",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "lint": "eslint --format codeframe .",
+    "lint:fix": "eslint --format codeframe --fix .",
+    "dev:migrate": "env-cmd sequelize db:migrate --env development --config ./config/sequelize.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katskurka/candy-maker-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/katskurka/candy-maker-api/issues"
+  },
+  "homepage": "https://github.com/katskurka/candy-maker-api#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql2": "^2.3.0",
+    "sequelize": "^6.6.5",
+    "sequelize-cli": "^6.2.0"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "eslint": "^7.32.0",
+    "nodemon": "^2.0.12"
+  }
+}
